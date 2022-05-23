@@ -18,7 +18,7 @@ html, body {
     width: 75vh;
     background-color: rgba(190, 35, 35, 1);
     border-radius: 25px;
-    border: .35vh solid rgb(190, 54, 54);
+    border: .75vh solid rgb(190, 54, 54);
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -69,8 +69,62 @@ html, body {
 
 }
 
+/* buttons */
+
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
+/* slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    width: fit-content;
+}
+
+.slider {
+    -webkit-appearance: none;
+  width: 100%;
+  height: 1.5vh;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(163, 52, 52);
+  border: .2vh solid rgb(139, 22, 22);
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 50%;
+    background-color: rgb(235, 232, 232);
+    border: .4vh solid white;
+    cursor: pointer;
+}
+
+.color-selector-container, .reset-container {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    font-weight: bold;
+    color: rgb(139, 22, 22)
+}
+
+.color-selector-button, .reset-button {
+    background-color: rgb(235, 232, 232);
+    border: .70vh solid white;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    height: 6.5vh;
+    width: 6.5vh;
+    cursor: pointer;
+}
+
+
