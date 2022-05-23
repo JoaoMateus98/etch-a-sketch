@@ -59,12 +59,12 @@ html, body {
     height: 65%;
     width: 85%;
     background-color: rgba(182, 180, 180, 1);
-    border: .35vh solid rgb(209, 207, 207);
+    border: .4vh solid rgb(139, 22, 22);
 }
 
 .screen {
     height: auto;
-    width: 60.318%; /* best way I know to make the screen a square at the moment*/
+    width: 60.195%; /* best way I know to make the screen a square at the moment*/
     background-color: white;
 
 }
@@ -87,7 +87,7 @@ html, body {
 
 .slider {
     -webkit-appearance: none;
-  width: 100%;
+  width: 12vh;
   height: 1.5vh;
   border-radius: 10px;
   outline: none;
@@ -112,8 +112,9 @@ html, body {
     display: flex;
     align-items: center;
     gap: 1vh;
+    font-size: 1.8vh;
     font-weight: bold;
-    color: rgb(139, 22, 22)
+    color: rgb(139, 22, 22);
 }
 
 .color-selector-button, .reset-button {
