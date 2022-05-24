@@ -139,7 +139,7 @@ html, body {
     color: rgb(139, 22, 22);
 }
 
-.reset-button {
+#color_front, .reset-button {
     background-color: rgb(235, 232, 232);
     border: .70vh solid white;
     border-radius: 50%;
@@ -148,23 +148,16 @@ html, body {
     height: 6.5vh;
     width: 6.5vh;
     cursor: pointer;
+}
+
+#color_front {
+    height: 5.1vh;
+    width: 5.1vh;
 }
 
 input[type=color] {
     display: none;
 }
-#color_front {
-    background-color: rgb(235, 232, 232);
-    border: .70vh solid white;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    height: 6.5vh;
-    width: 6.5vh;
-    cursor: pointer;
-  display:inline-block;
-}
-
 
 .footer {
     display: flex;
