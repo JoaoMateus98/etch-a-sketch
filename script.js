@@ -1,8 +1,8 @@
+// written by Joaomateus Dos Santos on May 2022
 
 const slider = document.getElementById('myRange');
 const sliderOutput = document.getElementById('slider-value');
 const screen = document.querySelector('.screen');
-//const colorButton = document.querySelector('.color-selector-button');
 const resetButton = document.querySelector('.reset-button');
 const span = document.getElementById('color_front');
 const colorPickerButton = document.getElementById('colour');
