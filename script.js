@@ -2,11 +2,24 @@
 const slider = document.getElementById('myRange');
 const sliderOutput = document.getElementById('slider-value');
 const screen = document.querySelector('.screen');
-const colorButton = document.querySelector('.color-selector-button');
-const resetButton = document.querySelector('.reset-button')
+//const colorButton = document.querySelector('.color-selector-button');
+const resetButton = document.querySelector('.reset-button');
+const span = document.getElementById('color_front');
+const colorPickerButton = document.getElementById('colour');
+
+let currentColor = 'black';
 let gridItem;
 let gridArray;
 let changedGrid = false;
+
+// select color
+span.addEventListener('click', () => {
+    colorPickerButton.click();
+});
+
+colorPickerButton.addEventListener('change', (e) => {
+    currentColor = e.target.value;
+})
 
 // get and update slider values
 let sliderValue = slider.value;
@@ -62,6 +75,6 @@ function setItemAttributes (item) {
 
 function paintItems (currentItem) {
     currentItem.addEventListener('mouseover', function () {
-        currentItem.setAttribute('style', 'background-color: black');
+        currentItem.setAttribute('style', `border: 1px solid black; background-color: ${currentColor}`);
     });
 }
